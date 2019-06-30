@@ -1,0 +1,110 @@
+body {
+    background-image: url("../images/colors.jpg");
+}
+#headerContainer {
+    width: 300px;
+    height: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:white;
+    border: solid black 5px;
+    position: absolute;
+    left: 5%;
+}
+header {
+    width: 250px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    text-anchor: center;
+    position: absolute;
+    left: 8%;
+}
+#container {
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    width: 400px;
+    height: 250px;
+    border: solid black 8px;
+    background-color: peru;
+}
+#rngGenerator {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    width: 300px;
+    height: 85px;
+    border: solid black 4px;
+    background-color: seagreen;
+
+}
+#scoreBoard {
+    position: absolute;
+    top: 55%;
+    left: 29%;
+    width: 85px;
+    height: 85px;
+    border: solid black 4px;
+    background-color: seagreen;
+
+}
+#redCrystal {
+    position: absolute;
+    top: 69.6%;
+    left: 5%;
+    width: 85px;
+    height: 85px;
+    border: solid black 4px;
+    background-color:white;
+
+}
+#blueCrystal {
+    position: absolute;
+    top: 69.6%;
+    left: 13%;
+    width: 85px;
+    height: 85px;
+    border: solid black 4px;
+    background-color:white;
+    
+}
+#greenCrystal {
+    position: absolute;
+    top: 69.6%;
+    left: 21%;
+    width: 85px;
+    height: 85px;
+    border: solid black 4px;
+    background-color:white;
+    
+}
+#yellowCrystal {
+    position: absolute;
+    top: 69.6%;
+    left: 29%;
+    width: 85px;
+    height: 85px;
+    border: solid black 4px;
+    background-color:white;
+    
+}
+#totalScore {
+    position: absolute;
+    top: 84%;
+    left: 5%;
+    width: 409px;
+    height: 50px;
+    border: solid black 4px;
+    background-color:lavender;
+    
+}
+#totalScoreDisplay {
+    position: absolute;
+    top: 93%;
+    left: 5%;
+    width: 409px;
+    height: 100px;
+    border: solid black 4px;
+    background-color:seagreen;
+    
+}
