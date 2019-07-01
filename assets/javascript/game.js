@@ -5,6 +5,7 @@ var redCrystal = 0;
 var blueCrystal = 0;
 var greenCrystal = 0;
 var yellowCrystal = 0;
+var operatorSelected = false;
 win = undefined;
 loss = undefined;
 
@@ -17,5 +18,11 @@ $(document).ready(function(){
         console.log(randomNumber)
 
     });
+    $('#redCrystal').on("click", function(){
+        operatorSelected = true;
+        var redCrystal = Math.floor(Math.random()*12)
+        $('#totalScoreDisplay').text(redCrystal);
+        
+      })
     
 })
