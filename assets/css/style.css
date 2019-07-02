@@ -1,5 +1,7 @@
 body {
-    background-image: url("../images/colors.jpg");
+    background-image: url("../images/newbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #headerContainer {
     width: 300px;
@@ -88,19 +90,10 @@ header {
     background-color:white;
     
 }
-#totalScore {
-    position: absolute;
-    top: 84%;
-    left: 5%;
-    width: 409px;
-    height: 50px;
-    border: solid black 4px;
-    background-color:lavender;
-    
-}
+
 #totalScoreDisplay {
     position: absolute;
-    top: 93%;
+    top: 85%;
     left: 5%;
     width: 409px;
     height: 100px;
