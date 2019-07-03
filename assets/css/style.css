@@ -7,9 +7,9 @@ body {
 #fatherContainer {
     width: 100%;
     height: 500px;
-    background-image: url("../images/peru.jpg");
+    background-image: url("../images/pencil.jpg");
     position: absolute;
-    top: 20%;
+    top: 17%;
 }
 #headerContainer {
     width: 300px;
@@ -18,8 +18,8 @@ body {
     background-image: url("../images/header.jpg");
     border: solid black 5px;
     position: absolute;
-    left: 40%;
-    top: 5%;
+    left: 37%;
+    top: 2%;
 }
 #crystalCollectorh1{
     font-size: 200%;
@@ -51,18 +51,18 @@ body {
 #container {
     position: absolute;
     top: 5%;
-    left: 5%;
-    width: 400px;
-    height: 275px;
+    left: 15%;
+    width: 30%;
+    height: 60%;
     border: solid black 4px;
     background-color: white;
     background-image: url("../images/teal.jpg");
 }
 #scoreboardContainer {
     position: absolute;
-    left: 55%;
+    left: 50%;
     top: 5%;
-    width: 40%;
+    width: 35%;
     height: 60%;
     border: solid 4px black;
     background-image: url("../images/teal.jpg");
@@ -70,9 +70,9 @@ body {
 #rngGenerator {
     position: absolute;
     top: 5%;
-    left: 20%;
+    left: 19%;
     width: 300px;
-    height: 5%;
+    height: 10%;
     border: solid black 4px;
     background-image: url("../images/header.jpg");
     text-align:center;
@@ -89,7 +89,7 @@ body {
 #totalScoreDisplay {
     position: absolute;
     top: 25%;
-    left: 20%;
+    left: 19%;
     width: 300px;
     height: 50px;
     border: solid black 4px;
@@ -149,4 +149,15 @@ body {
 #image {
     width:100%;
     height:100%;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:slategrey;
+    color: white;
+    text-align: center;
+    height: 4%;
+    border-top: black solid 2px;
 }
