@@ -37,7 +37,7 @@ $(document).ready(function () {
     $("#redCrystal").on("click", function () {
 
         score = redCrystal + score
-        $("#totalScoreDisplay").text(score)
+        $("#totalScoreDisplay").text("Score: " + score)
 // conditions set if a player clicks on the red crystal and happens to win
         if (score == randomNumber) {
 // The win counter will go up
@@ -45,7 +45,8 @@ $(document).ready(function () {
 // this is where the win counter will display the interval of wins 
             $("#win").text("Wins: " + win)
 // Displays a message in the score display under the win conditions
-            $("#totalScoreDisplay").text("YOU WIN!!! Click a crystal to play again!")
+            alert("YOU WIN!")
+            $("#totalScoreDisplay").text("Score: 0")
 // when the player wins a game, this function call will reset the game not including the score
 // so the player can keep track of how may times they have won or lost.
             resetGame();{
@@ -62,7 +63,8 @@ $(document).ready(function () {
             loss++
             $("#loss").text("Losses: " + loss)
             // write losses to page
-            $("#totalScoreDisplay").text("YOU LOSE!!! Click a crystal to play again!")
+            alert("YOU LOSE!")
+            $("#totalScoreDisplay").text("Score: 0")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
                 blueCrystal = Math.floor(Math.random() * 12) + 1;
@@ -80,11 +82,12 @@ $(document).ready(function () {
     $("#blueCrystal").on("click", function () {
 
         score = blueCrystal + score
-        $("#totalScoreDisplay").text(score)
+        $("#totalScoreDisplay").text("Score: " + score)
         if (score == randomNumber) {
             win++
             $("#win").text("Wins: " + win)
-            $("#totalScoreDisplay").text("YOU WIN!!! Click a crystal to play again!")
+            alert("YOU WIN!")
+            $("#totalScoreDisplay").text("Score: 0")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
                 blueCrystal = Math.floor(Math.random() * 12) + 1;
@@ -98,7 +101,8 @@ $(document).ready(function () {
         if (score > randomNumber) {
             loss++
             $("#loss").text("Losses: " + loss)
-            $("#totalScoreDisplay").text("YOU LOSE!!! Click a crystal to play again!")
+            alert("YOU LOSE!")
+            $("#totalScoreDisplay").text("Score: 0")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
                 blueCrystal = Math.floor(Math.random() * 12) + 1;
@@ -115,12 +119,13 @@ $(document).ready(function () {
     $("#greenCrystal").on("click", function () {
 
         score = greenCrystal + score
-        $("#totalScoreDisplay").text(score)
+        $("#totalScoreDisplay").text("Score: " + score)
 
         if (score == randomNumber) {
             win++
             $("#win").text("Wins: " + win)
-            $("#totalScoreDisplay").text("YOU WIN!!! Click a crystal to play again!")
+            alert("YOU WIN!")
+            $("#totalScoreDisplay").text("Score: 0")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
                 blueCrystal = Math.floor(Math.random() * 12) + 1;
@@ -134,7 +139,8 @@ $(document).ready(function () {
         if (score > randomNumber) {
             loss++
             $("#loss").text("Losses: " + loss)
-            $("#totalScoreDisplay").text("YOU LOSE!!! Click a crystal to play again!")
+            alert("YOU LOSE!")
+            $("#totalScoreDisplay").text("Score: 0")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
                 blueCrystal = Math.floor(Math.random() * 12) + 1;
@@ -151,12 +157,13 @@ $(document).ready(function () {
     $("#yellowCrystal").on("click", function () {
 
         score = yellowCrystal + score
-        $("#totalScoreDisplay").text(score)
+        $("#totalScoreDisplay").text("Score: " + score)
 
         if (score == randomNumber) {
             win++
             $("#win").text("Wins: " + win)
-            $("#totalScoreDisplay").text("YOU WIN!!! Click a crystal to play again!")
+            alert("YOU WIN!")
+            $("#totalScoreDisplay").text("Score: 0")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
                 blueCrystal = Math.floor(Math.random() * 12) + 1;
@@ -170,7 +177,8 @@ $(document).ready(function () {
         if (score > randomNumber) {
             loss++
             $("#loss").text("Losses: " + loss)
-            $("#totalScoreDisplay").text("YOU LOSE!!! Click a crystal to play again!")
+            alert("YOU LOSE!")
+            $("#totalScoreDisplay").text("Score: 0")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
                 blueCrystal = Math.floor(Math.random() * 12) + 1;
