@@ -26,8 +26,6 @@ $(document).ready(function () {
         redCrystal = Math.floor(Math.random() * 12) + 1;
         randomNumber = Math.floor(Math.random() * 102) + 19;
         score = 0;
-        loss = 0;
-        win = 0;
         $("#rngGenerator").text("The number to match is: " + randomNumber);
         
     }
@@ -60,7 +58,7 @@ $(document).ready(function () {
         }
         if (score > randomNumber) {
             loss++
-            $("#loss").text("Loses: " + loss)
+            $("#loss").text("Losses: " + loss)
             // write losses to page
             $("#totalScoreDisplay").text("YOU LOSE!!! Click a crystal to play again!")
             resetGame();{
@@ -97,7 +95,7 @@ $(document).ready(function () {
         }
         if (score > randomNumber) {
             loss++
-            $("#loss").text("Loses: " + loss)
+            $("#loss").text("Losses: " + loss)
             $("#totalScoreDisplay").text("YOU LOSE!!! Click a crystal to play again!")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
@@ -133,7 +131,7 @@ $(document).ready(function () {
         }
         if (score > randomNumber) {
             loss++
-            $("#loss").text("Loses: " + loss)
+            $("#loss").text("Losses: " + loss)
             $("#totalScoreDisplay").text("YOU LOSE!!! Click a crystal to play again!")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
@@ -169,7 +167,7 @@ $(document).ready(function () {
         }
         if (score > randomNumber) {
             loss++
-            $("#loss").text("Loses: " + loss)
+            $("#loss").text("Losses: " + loss)
             $("#totalScoreDisplay").text("YOU LOSE!!! Click a crystal to play again!")
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
