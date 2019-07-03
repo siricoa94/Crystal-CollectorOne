@@ -31,21 +31,23 @@ $(document).ready(function () {
     }
 
 
-
-// on click function for the red crystal that adds the value of red crystal 
-// to the score and then displays it on the total score display. Then if the score is equal to 
-// the random Number generated, it will incriment a win and display a win message.
-// if the player loses, the loss will be incrimented and a loss message will be displayed.
-// repeat these instructions for each new crystal color.
+// the instructions for all the crystals will be the same as red crystal, and the loss conditions will be similar
+// to the win conditions for future reference
+// on click function for the red crystal that adds the value of red crystal to the score display
     $("#redCrystal").on("click", function () {
 
         score = redCrystal + score
         $("#totalScoreDisplay").text(score)
-
+// conditions set if a player clicks on the red crystal and happens to win
         if (score == randomNumber) {
+// The win counter will go up
             win++
+// this is where the win counter will display the interval of wins 
             $("#win").text("Wins: " + win)
+// Displays a message in the score display under the win conditions
             $("#totalScoreDisplay").text("YOU WIN!!! Click a crystal to play again!")
+// when the player wins a game, this function call will reset the game not including the score
+// so the player can keep track of how may times they have won or lost.
             resetGame();{
                 yellowCrystal = Math.floor(Math.random() * 12) + 1;
                 blueCrystal = Math.floor(Math.random() * 12) + 1;
